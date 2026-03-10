@@ -28,3 +28,6 @@ Components created:
 - Private Subnet
 - Internet Gateway
 - Route Table
+
+<img width="1305" height="352" alt="image" src="https://github.com/user-attachments/assets/0788ff37-b723-4dfb-84bc-95d79d9bf97d" />
+
