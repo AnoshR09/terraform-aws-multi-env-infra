@@ -17,3 +17,14 @@ To automate AWS infrastructure provisioning across multiple environments (dev, s
 - Project repository initialized
 - Terraform AWS provider configured
 - EC2 instance deployed using Terraform
+
+## Day 2 - AWS VPC Networking
+
+Provisioned AWS networking infrastructure using Terraform.
+
+Components created:
+- VPC
+- Public Subnet
+- Private Subnet
+- Internet Gateway
+- Route Table
