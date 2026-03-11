@@ -29,5 +29,15 @@ Components created:
 - Internet Gateway
 - Route Table
 
-<img width="1305" height="352" alt="image" src="https://github.com/user-attachments/assets/0788ff37-b723-4dfb-84bc-95d79d9bf97d" />
+## Day 3 - Terraform Modules
 
+Refactored Terraform infrastructure into reusable modules.
+
+Modules created:
+- VPC Module
+- EC2 Module (planned)
+
+Benefits:
+- Reusable infrastructure
+- Cleaner code organization
+- Easier environment management
