@@ -41,3 +41,14 @@ Benefits:
 - Reusable infrastructure
 - Cleaner code organization
 - Easier environment management.
+
+## Day 4 - Multi Environment Infrastructure
+
+Implemented multi-environment infrastructure using Terraform.
+
+Environments created:
+- Development
+- Staging
+- Production
+
+Each environment uses the same Terraform module but with different configuration values.
