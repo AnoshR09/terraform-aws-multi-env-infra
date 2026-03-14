@@ -52,3 +52,13 @@ Environments created:
 - Production
 
 Each environment uses the same Terraform module but with different configuration values.
+
+## Day 5 - Terraform Remote State
+
+Configured Terraform remote state using AWS S3 and DynamoDB
+
+Benefits of remote state:
+- Centralized state management
+- Collaboration support
+- State locking to prevent conflicts
+- Versioning enabled

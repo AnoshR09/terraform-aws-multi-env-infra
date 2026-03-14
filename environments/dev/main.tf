@@ -15,3 +15,12 @@ module "vpc" {
     az3 = "eu-north-1c"
 }
 
+terraform {
+    backend "s3" {
+        bucket = "terraform-multi-env-state-anosh"
+        key = "dev/terraform.tfstate"
+        region = "eu-north-1"
+        dynamodb_table = "terraform-locks"
+      
+    }
+}
