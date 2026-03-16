@@ -62,3 +62,5 @@ Benefits of remote state:
 - Collaboration support
 - State locking to prevent conflicts
 - Versioning enabled
+
+## Day 6 - Terraform Remote State
