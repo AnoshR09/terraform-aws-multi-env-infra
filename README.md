@@ -64,3 +64,11 @@ Benefits of remote state:
 - Versioning enabled
 
 ## Day 6 - Terraform Remote State
+
+Provisioned compute infrastructure using Terraform modules.
+
+Resources created:
+
+- EC2 instance
+- Security group
+- Public subnet deployment
