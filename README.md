@@ -23,27 +23,8 @@ The infrastructure provisions:
 
 ## 📂 Project Structure
 
-│
-├── modules
-│ ├── vpc
-│ │ ├── main.tf
-│ │ ├── variables.tf
-│ │ └── outputs.tf
-│ │
-│ └── ec2
-│ ├── main.tf
-│ ├── variables.tf
-│ └── outputs.tf
-│
-├── environments
-│ └── dev
-│ ├── main.tf
-│ ├── backend.tf
-│ └── variables.tf
-│
-└── docs
-└── architecture.md
-|
+<img width="400" height="519" alt="image" src="https://github.com/user-attachments/assets/92f2b0f6-bc37-4841-9c89-317fce3d0599" />
+
 ---
 
 ## ⚙️ Terraform Workflow
