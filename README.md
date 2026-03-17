@@ -19,6 +19,9 @@ The infrastructure provisions:
 - **Terraform Remote State (S3)**
 - **State Locking using DynamoDB**
 
+  <img width="650" height="432" alt="image" src="https://github.com/user-attachments/assets/332aa180-190a-4b5b-a3c6-47ea7feefc5e" />
+
+
 ---
 
 ## 📂 Project Structure
