@@ -1,74 +1,111 @@
-# Terraform AWS Multi Environment Infrastructure
+# Terraform AWS Multi-Environment Infrastructure
 
-This project demonstrates Infrastructure as Code using Terraform to provision AWS infrastructure.
+This project demonstrates provisioning AWS infrastructure using **Terraform modules, remote state management, and environment-based deployments.**
 
-## Tools Used
+The infrastructure includes networking, compute resources, and secure state management following real-world DevOps practices.
 
-- Terraform
-- AWS
-- GitHub
+---
 
-## Project Goal
+## 🚀 Architecture
 
-To automate AWS infrastructure provisioning across multiple environments (dev, staging, production) using Terraform modules and remote state management.
+The infrastructure provisions:
 
-## Day 1 Progress
+- Custom **AWS VPC**
+- **Public and Private Subnets**
+- **Internet Gateway**
+- **Route Tables**
+- **EC2 Instance**
+- **Security Group**
+- **Terraform Remote State (S3)**
+- **State Locking using DynamoDB**
 
-- Project repository initialized
-- Terraform AWS provider configured
-- EC2 instance deployed using Terraform
+---
 
-## Day 2 - AWS VPC Networking
+## 📂 Project Structure
 
-Provisioned AWS networking infrastructure using Terraform.
+│
+├── modules
+│ ├── vpc
+│ │ ├── main.tf
+│ │ ├── variables.tf
+│ │ └── outputs.tf
+│ │
+│ └── ec2
+│ ├── main.tf
+│ ├── variables.tf
+│ └── outputs.tf
+│
+├── environments
+│ └── dev
+│ ├── main.tf
+│ ├── backend.tf
+│ └── variables.tf
+│
+└── docs
+└── architecture.md
 
-Components created:
-- VPC
-- Public Subnet
-- Private Subnet
-- Internet Gateway
-- Route Table
 
-## Day 3 - Terraform Modules
+---
 
-Refactored Terraform infrastructure into reusable modules.
+## ⚙️ Terraform Workflow
 
-Modules created:
-- VPC Module
-- EC2 Module (planned)
+Initialize Terraform
+$ terraform init
 
-Benefits:
-- Reusable infrastructure
-- Cleaner code organization
-- Easier environment management.
+Preview infrastructure changes
+$ terraform plan
 
-## Day 4 - Multi Environment Infrastructure
+Deploy infrastructure
+$ terraform apply
 
-Implemented multi-environment infrastructure using Terraform.
+Destroy infrastructure
+$ terraform destroy
 
-Environments created:
-- Development
-- Staging
-- Production
 
-Each environment uses the same Terraform module but with different configuration values.
 
-## Day 5 - Terraform Remote State
+---
 
-Configured Terraform remote state using AWS S3 and DynamoDB
+## 🔐 Remote State Management
 
-Benefits of remote state:
-- Centralized state management
-- Collaboration support
-- State locking to prevent conflicts
-- Versioning enabled
+Terraform state is stored securely using:
 
-## Day 6 - Terraform Remote State
+- **AWS S3** for remote state storage
+- **DynamoDB** for state locking
 
-Provisioned compute infrastructure using Terraform modules.
+This ensures safe collaboration when multiple engineers manage the same infrastructure.
 
-Resources created:
+---
 
-- EC2 instance
-- Security group
-- Public subnet deployment
+## 📊 Infrastructure Provisioned
+
+| Resource | Purpose |
+|--------|--------|
+| VPC | Network isolation |
+| Subnets | Public and private networking |
+| Internet Gateway | Public internet access |
+| Route Tables | Traffic routing |
+| EC2 Instance | Compute infrastructure |
+| Security Group | Instance access control |
+| S3 Bucket | Terraform state storage |
+| DynamoDB | Terraform state locking |
+
+---
+
+## 🧠 Key DevOps Concepts Demonstrated
+
+- Infrastructure as Code
+- Terraform Modules
+- Multi-Environment Infrastructure
+- Remote State Management
+- AWS Networking
+- EC2 Compute Provisioning
+
+---
+
+## 👨‍💻 Author
+
+**Anosh Rukadikar**
+
+DevOps Engineer | AWS | Terraform | Kubernetes
+
+GitHub: https://github.com/AnoshR09
