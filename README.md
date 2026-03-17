@@ -19,29 +19,7 @@ The infrastructure provisions:
 - **Terraform Remote State (S3)**
 - **State Locking using DynamoDB**
 
-                        Terraform
-                          │
-    ┌─────────────────────┼─────────────────────┐
-    │                     │                     │
-modules/vpc           modules/ec2          environments
-    │                     │                     │
-    ▼                     ▼                     │──────────┐──────────┐
- AWS VPC             EC2 Instance               │          │          │
-    │                   │                       ▼          ▼          ▼
-    ├── Public Subnets  └── Security Group     dev      staging      prod
-    ├── Private Subnet                         │          │          │
-    ├── Internet Gateway                       ├─ main.tf ├─ main.tf ├─ main.tf
-    └── Route Table                            ├─ vars.tf ├─ vars.tf ├─ vars.tf
-                                               └─ out.tf  └─ out.tf  └─ out.tf
-
-
-                Remote Terraform State
-                       │
-            ┌──────────┴──────────┐
-            │                     │
-        AWS S3 Bucket       DynamoDB Table
-      (terraform.tfstate)   (State Locking)
-
+<img width="758" height="559" alt="image" src="https://github.com/user-attachments/assets/42b94e5a-fbc6-462e-8cfc-2b3cc8060732" />
 
 ---
 
