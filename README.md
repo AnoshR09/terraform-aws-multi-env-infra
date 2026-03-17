@@ -43,8 +43,7 @@ The infrastructure provisions:
 │
 └── docs
 └── architecture.md
-
-
+|
 ---
 
 ## ⚙️ Terraform Workflow
